@@ -2,7 +2,6 @@ package Exercise1;
 import java.util.*;
 
 public class AnonymousClassWay{
-
 	public static void main (String[] args){
 		//Anonymous Class Way
 		TreeSet<Student> set = new TreeSet<Student>(new Comparator<Student>() {
