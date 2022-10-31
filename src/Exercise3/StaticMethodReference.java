@@ -1,17 +1,18 @@
 package Exercise3;
 
-interface myInterface1{
-	   void greet();
-	}
-	public class StaticMethodReference {
-	   public static void demo() {
-	      System.out.println("Sample Static Method Reference");
-	   }
-	   public static void main(String args[]) {
-	      myInterface1 in = StaticMethodReference::demo;
-	      in.greet();
-	   }
-	}
-	
+import java.util.function.BiFunction;  
+class Arithmetic1{  
+public static int add(int a, int b){  
+	return a+b;  
+	}  
+}  
+public class StaticMethodReference {  
+	public static void main(String[] args) {  
+		BiFunction<Integer, Integer, Integer>adder = Arithmetic1::add;  
+		int result = adder.apply(10, 20);  
+		System.out.println(result);  
+	}  
+}  
+
 //Output:
-//	Sample Static Method Reference
+// 30

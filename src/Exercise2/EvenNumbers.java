@@ -7,8 +7,7 @@ import java.util.List;
 
 public class EvenNumbers {
 	public static void main(String[] args) {
-		List<Integer> list = new ArrayList<Integer>(
-				Arrays.asList(1,2,3,4,5,6,7,8,9));
+		List<Integer> list = new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,6,7,8,9));
 		List<Integer> EvenNumbers = list
 									.stream()
 									.filter(i -> i%2 == 0)
